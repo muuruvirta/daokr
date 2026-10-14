@@ -1,5 +1,5 @@
 #######################################################
-# DEMO 2: DATAN HAKEMINEN JA RAKENTEIDEN HALLINTA
+# DEMO 2: DATAN HAKEMINEN JA RAKENTEEN TARKASTELU
 #######################################################
 # Demon jälkeen osaat:
 
@@ -35,7 +35,10 @@ library(readr)
 # read_csv2() olettäa tyypillisesti puolipisteen kenttien erottimeksi
 # ja pilkun desimaalierottimeksi.
 
-data <- read_csv2("C:/Users/Installer/Desktop/data.csv")
+#Huom! Tiedoston polku on Noppe-ympäristön mukainen. Mikäli et käytä Noppe-
+#ympäristöä, lataa tiedosto Moodlen tiedostokansiosta ja vaihda polku. 
+
+data <- read_csv2("~/shared/data.csv")
 data
 
 #######################################################
@@ -48,7 +51,7 @@ data
 # tunnistetuista tietotyypeista kertovan ilmoituksen tulostumisen.
 
 data <- read_delim(
-  "C:/Users/Installer/Desktop/data.csv",
+  "~/shared/data.csv",
   delim = ";",
   locale = locale(
     encoding = "UTF-8",
