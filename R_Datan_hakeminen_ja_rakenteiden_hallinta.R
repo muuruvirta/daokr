@@ -212,7 +212,7 @@ colSums(is.na(data))
 
 write_csv(
   data,
-  "C:/Users/Installer/Desktop/siivottudataR.csv"
+  "~/siivottudataR.csv"
 )
 
 # Vaihtoehtoisesti aineisto voidaan tallentaa Excel-muotoon.
@@ -221,6 +221,6 @@ write_csv(
 
 # writexl::write_xlsx(
 #   data,
-#   "C:/Users/Installer/Desktop/siivottudataR.xlsx"
+#   "~/siivottudataR.xlsx"
 # )
 
