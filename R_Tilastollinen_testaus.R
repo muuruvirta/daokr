@@ -16,12 +16,26 @@
 # Jos p >= 0.05, aineiston perusteella ei ole riittävästi näyttöä 
 # tilastollisesti merkitsevästa erosta tai yhteydestö ja H0:aa ei voida hylätä. 
 
+# Mieti jokaisen testin yhteydessä seuraavaa:
+#
+# 1. Mitä testiä käytettiin ja miksi?
+# 2. Oliko tulos tilastollisesti merkitsevä?
+# 3. Mitä tulos tarkoittaa käytännössä?
+#
+# Muista:
+# p < 0.05  -> tilastollisesti merkitsevä tulos
+# p >= 0.05 -> ei riittävää näyttöä tilastollisesti merkitsevästa
+#              erosta tai yhteydestä
+#
+# Oikeat vastaukset ovat Moodlessa.
+
+
 library(tidyverse)
 library(readxl)
 
 # Lue Excel-aineisto.
 
-data <- read_excel("Tilastollinen_testaus.xlsx", sheet = "Aineisto")
+data <- read_excel("shared/Tilastollinen_testaus.xlsx", sheet = "Aineisto")
 
 
 ########################################################
@@ -273,19 +287,4 @@ pearson_testi
 # mutta korrelaatio ei tarkoita syy-seuraussuhdettä.
 
 
-########################################################
-# 6. YHTEENVETO
-########################################################
 
-# Tee jokaisesta testistä lyhyt sanallinen johtopäätös.
-#
-# 1. Mitä testiä käytettiin ja miksi?
-# 2. Oliko tulos tilastollisesti merkitsevä?
-# 3. Mitä tulos tarkoittaa käytännössä?
-#
-# Muista:
-# p < 0.05  -> tilastollisesti merkitsevä tulos
-# p >= 0.05 -> ei riittävää näyttöä tilastollisesti merkitsevästa
-#              erosta tai yhteydestä
-#
-# Oikeat vastaukset ovat tiedostossa vastaukset.txt.
