@@ -28,6 +28,7 @@ library(randomForest)
 
 data("AirPassengers")
 
+
 # Tarkastellaan aineiston rakennetta, ajanjaksoa ja havaintotiheyttä.
 AirPassengers
 class(AirPassengers)
