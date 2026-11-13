@@ -218,7 +218,7 @@ autoplot(sarima_ennuste) +
 # Muuta tiedoston nimeä tarvittaessa vastaamaan omalla koneellasi
 # olevan Excel-tiedoston nimeä.
 
-tiedosto <- "Demo8_myyntidata.xlsx"
+tiedosto <- "shared/Demo8_myyntidata.xlsx"
 
 historia <- read_excel(tiedosto, sheet = "Historia")
 uusi_data <- read_excel(tiedosto, sheet = "Uusi_data")
